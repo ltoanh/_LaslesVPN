@@ -1,0 +1,48 @@
+.btn {
+  display: inline-block;
+
+  line-height: calc(25 / 16);
+
+  &-primary {
+    position: relative;
+
+    padding: 17px 77px;
+
+    border-radius: 10px;
+
+    background-color: var(--color-red);
+
+    color: #fff;
+
+    box-shadow: 0 30px 54px -19px rgba($color: var(--bg-color-red-rgb), $alpha:
+          0.35);
+  }
+
+  &-outline {
+    padding: 13px 45px;
+
+    color: var(--color-red);
+
+    border: 2px solid var(--color-red);
+    border-radius: 50px;
+
+    &-primary {
+      color: var(--color-red);
+      font-weight: 700;
+
+      border: 2px solid var(--color-red);
+      border-radius: 50px;
+
+      padding: 13px 62px;
+
+      &:hover {
+        background-color: var(--color-red);
+
+        color: #fff;
+
+        box-shadow: 0 30px 54px -10px rgba($color: var(--bg-color-red-rgb), $alpha:
+              0.35);
+      }
+    }
+  }
+}

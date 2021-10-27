@@ -1,0 +1,34 @@
+.header{
+  padding-top: 50px;
+  padding-bottom: 92px;
+
+  &-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &-menu{
+    display: flex;
+    align-items: center;
+    gap: 0 40px;
+
+    &-link{
+      color: inherit;
+    }
+  }
+
+  &-auth{
+    display: flex;
+    align-items: center;
+    gap: 0 30px;
+
+    font-weight: 500;
+    font-size: 16px;
+
+    &-signin{
+      color: var(--color-black);
+    }
+  }
+
+}

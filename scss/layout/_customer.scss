@@ -1,0 +1,137 @@
+.customer{
+  padding-top: 50px;
+  margin-bottom: 60px;
+
+  &-list{
+  }
+
+  // item
+  &-item{
+    width: 400px;
+    
+    border: 2px solid var(--border-gray);
+    border-radius: 10px;
+
+    padding: 30px;
+
+    cursor: pointer;
+
+    box-shadow: 0 10px 114px 45px rgba(var(--shadow-black, 0.06));
+
+    &.slick-current.slick-active{
+      border-color: var(--color-red);
+    }
+  }
+
+  // header
+  &-header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    margin-bottom: 20px;
+
+    &-inf{
+      display: flex;
+      align-items: center;
+      gap: 10px;
+
+      &--avatar img{
+        width: 50px;
+        height: 50px;
+
+        border-radius: 999px;
+
+        object-fit: cover;
+      }
+    }
+  }
+  //rating
+  &-rating{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+
+
+  //=====================slick slider====================
+  .slick-track{
+    display: flex;
+
+    padding-bottom: 60px;
+
+    gap: 0 50px;
+    
+    align-items: stretch;
+
+    position: relative;
+
+  }
+  .slick-slide{
+    height: auto; //make all block the same height
+  }
+  //===========custom dots===========
+  .slick-dots{
+    display: flex;
+    align-items: center;
+
+    gap: 0 15px;
+
+    transform: translateY(50%);
+
+    button{
+      font-size: 0;
+
+      background-color: var(--dot-gray);
+
+      height: 15px;
+      width: 15px;
+      
+      border-radius: 999px;
+
+      transition: all .2s linear;
+    }
+    // active dot
+    .slick-active button{
+      background-color: var(--color-red);
+      width: 45px;
+    }
+  }
+  //=======custom arrow========
+  .slick-arrow{
+    width: 60px;
+    height: 60px;
+
+    border-radius: 999px;
+    border: 2px solid var(--color-red);
+
+    background-color: #fff;
+
+    z-index: 10;
+    i{
+      font-size: 30px;
+      color: var(--color-red);
+    }
+
+    &:hover{
+      background-color: var(--color-red);
+      i{
+        color: #fff;
+      }
+    }
+
+  }
+  .slick-prev{
+    position: absolute;
+    right: 80px;
+    bottom: 0;
+    transform: translateY(50%);
+  }
+  .slick-next{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    transform: translateY(50%);
+
+  }
+}
